@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  border: none;
 }
 
 body { 
@@ -51,7 +52,7 @@ body {
 .order-desc { 
   font-size: 16px;
   text-align: center;
-  color: #a7a8af;
+  color: hsl(224, 23%, 55%);
   padding: 1rem;
 }
 
@@ -59,13 +60,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1px;
+  margin-bottom: 1.4rem;
 }
 .order-details__item { 
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   width: 300px;
-  background-color: #f6fafd;
+  background-color: hsl(225, 100%, 98%);
   border-radius: 13px;
 }
 
@@ -82,14 +84,79 @@ body {
 .order-details__item span { 
   font-size: 13px;
   font-weight: 700;
-  color: #2a3449;
+  color: hsl(224, 23%, 55%);
 }
 .music-text__btn { 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   font-size: 14px;
   font-weight: 700;
-  margin-left: 68px;
   color: #3F51B5;
+  margin-left: 4rem;
 }
 .order-details__item a:hover { 
   text-decoration: none;
+  color: #766cf1;
+}
+
+.order-payment { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1px;
+}
+
+.payment-btn { 
+  display: block;
+  width: 300px;
+  border: none;
+  background-color: #3F51B5;
+  padding: 14px 28px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 13px;
+  color: #e1e9ff;
+  margin-bottom: 1.6rem;
+}
+.payment-btn:hover {
+  background-color: #766cf1;
+  box-shadow: 2px 9px 21px #776cf163;
+}
+.order-payment a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #8f8d9b;
+  text-decoration: none;
+}
+.order-payment a:hover {
+  color: #2a3449;
+}
+
+@media screen and (max-width: 375px) {
+  body { 
+    background: url(./assets/images/pattern-background-mobile.svg), #e1e9ff;
+    background-repeat: no-repeat;
+  }
+  .order-contents {
+    width: 340px;
+    height: 519px
+  }
+  .order-desc {
+    margin: 0 1rem;
+  }
+  .order-details {
+    
+  }
+  
+  .hero-img { 
+    height: 156px;
+    object-fit: cover;
+  }
+  .attribution { 
+    display: none;
+  }
 }

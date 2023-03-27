@@ -28,7 +28,7 @@ const Contents = () => {
 
             <div className="order-payment">
               <button className="payment-btn" type="button">Proceed to Payment</button>
-              <button className="cancel-btn" type="button">Cancel Order</button>
+              <a href="#" rel="noopener noreferrer">Cancel Order</a>
             </div>
           </div>
         </div>
